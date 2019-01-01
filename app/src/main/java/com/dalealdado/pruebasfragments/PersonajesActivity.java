@@ -11,12 +11,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Random;
 
 
-public class MainActivity extends AppCompatActivity {
+public class PersonajesActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
@@ -26,19 +23,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_personajes);
 
         findViewById(R.id.add).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, HeroesNewActivity.class));
+                startActivity(new Intent(PersonajesActivity.this, HeroesNewActivity.class));
             }
         });
 
         findViewById(R.id.adde).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EnemigosNewActivity.class));
+                startActivity(new Intent(PersonajesActivity.this, EnemigosNewActivity.class));
             }
         });
 
@@ -52,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-        heroesViewModel = ViewModelProviders.of(MainActivity.this).get(HeroeViewModel.class);
-        enemigosViewModel = ViewModelProviders.of(MainActivity.this).get(EnemigoViewModel.class);
+        heroesViewModel = ViewModelProviders.of(PersonajesActivity.this).get(HeroeViewModel.class);
+        enemigosViewModel = ViewModelProviders.of(PersonajesActivity.this).get(EnemigoViewModel.class);
     }
 
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
