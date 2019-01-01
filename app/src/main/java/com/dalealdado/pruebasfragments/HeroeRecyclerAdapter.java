@@ -1,5 +1,6 @@
 package com.dalealdado.pruebasfragments;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,11 +20,19 @@ public class HeroeRecyclerAdapter extends RecyclerView.Adapter<HeroeRecyclerAdap
     }
 
     @Override
-    public void onBindViewHolder (HeroeViewHolder holder, int position) {
+    public void onBindViewHolder (final HeroeViewHolder holder, int position) {
         final Heroes heroes = list.get(position);
 
         holder.heroeNombre.setText(heroes.nombre);
         holder.heroeRaza.setText(heroes.raza);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(holder.itemView.getContext(), HeroesShowActivity.class);
+                intent.putExtra("heroeid", heroes.id);
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override

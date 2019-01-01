@@ -27,7 +27,7 @@ public class HeroesNewActivity extends AppCompatActivity {
             EditText Hmana = findViewById(R.id.etEmana);
             EditText Hmagia = findViewById(R.id.etmagia);
             EditText Hhabilidades = findViewById(R.id.ethabilidades);
-            EditText Hinventario = findViewById(R.id.etdrop);
+            EditText Hinventario = findViewById(R.id.etinventario);
 
             @Override
             public void onClick(View v) {

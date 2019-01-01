@@ -21,7 +21,7 @@
 
 
             <TextView
-                android:id="@+id/etEnombre"
+                android:id="@+id/etnombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -34,7 +34,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/etEraza"
+                android:id="@+id/etraza"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -43,10 +43,10 @@
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etEnombre" />
+                app:layout_constraintTop_toBottomOf="@+id/etnombre" />
 
             <TextView
-                android:id="@+id/etEdesc"
+                android:id="@+id/etdesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -55,17 +55,17 @@
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etEraza" />
+                app:layout_constraintTop_toBottomOf="@+id/etraza" />
 
             <TextView
-                android:id="@+id/etEvida"
+                android:id="@+id/etvida"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/tvvida"
-                app:layout_constraintTop_toBottomOf="@+id/etEdesc" />
+                app:layout_constraintTop_toBottomOf="@+id/etdesc" />
 
             <TextView
                 android:id="@+id/tvvida"
@@ -76,17 +76,17 @@
                 android:text="Vida"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etEdesc" />
+                app:layout_constraintTop_toBottomOf="@+id/etdesc" />
 
             <TextView
-                android:id="@+id/etEfuerza"
+                android:id="@+id/etfuerza"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/tvfuerza"
-                app:layout_constraintTop_toBottomOf="@+id/etEvida" />
+                app:layout_constraintTop_toBottomOf="@+id/etvida" />
 
             <TextView
                 android:id="@+id/tvfuerza"
@@ -100,14 +100,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvvida" />
 
             <TextView
-                android:id="@+id/etEdefensa"
+                android:id="@+id/etdefensa"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/tvdefensa"
-                app:layout_constraintTop_toBottomOf="@+id/etEfuerza" />
+                app:layout_constraintTop_toBottomOf="@+id/etfuerza" />
 
             <TextView
                 android:id="@+id/tvdefensa"
@@ -121,14 +121,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvfuerza" />
 
             <TextView
-                android:id="@+id/etEevasion"
+                android:id="@+id/etevasion"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/tvevasion"
-                app:layout_constraintTop_toBottomOf="@+id/etEdefensa" />
+                app:layout_constraintTop_toBottomOf="@+id/etdefensa" />
 
             <TextView
                 android:id="@+id/tvevasion"
@@ -142,14 +142,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvdefensa" />
 
             <TextView
-                android:id="@+id/etEagilidad"
+                android:id="@+id/etagilidad"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/tvagilidad"
-                app:layout_constraintTop_toBottomOf="@+id/etEevasion" />
+                app:layout_constraintTop_toBottomOf="@+id/etevasion" />
 
             <TextView
                 android:id="@+id/tvagilidad"
@@ -174,7 +174,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvagilidad" />
 
             <TextView
-                android:id="@+id/etEhabilidades"
+                android:id="@+id/ethabilidades"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -193,7 +193,7 @@
                 android:layout_marginTop="15dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/tvmana"
-                app:layout_constraintTop_toBottomOf="@+id/etEdesc" />
+                app:layout_constraintTop_toBottomOf="@+id/etdesc" />
 
 
             <TextView
@@ -204,18 +204,18 @@
                 android:layout_marginTop="15dp"
                 android:text="Mana"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/etEvida"
-                app:layout_constraintTop_toBottomOf="@+id/etEdesc" />
+                app:layout_constraintStart_toEndOf="@+id/etvida"
+                app:layout_constraintTop_toBottomOf="@+id/etdesc" />
 
             <TextView
-                android:id="@+id/etEmagia"
+                android:id="@+id/etmagia"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/tvmagia"
-                app:layout_constraintTop_toBottomOf="@+id/etEmana" />
+                app:layout_constraintTop_toBottomOf="@+id/etmana" />
 
             <TextView
                 android:id="@+id/tvmagia"
@@ -225,8 +225,8 @@
                 android:layout_marginTop="15dp"
                 android:text="Magia"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/etEfuerza"
-                app:layout_constraintTop_toBottomOf="@+id/etEmana" />
+                app:layout_constraintStart_toEndOf="@+id/etfuerza"
+                app:layout_constraintTop_toBottomOf="@+id/etmana" />
 
             <TextView
                 android:id="@+id/tvinventario"
@@ -236,17 +236,17 @@
                 android:layout_marginTop="30dp"
                 android:text="Inventario"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/etEdefensa"
+                app:layout_constraintStart_toEndOf="@+id/etdefensa"
                 app:layout_constraintTop_toBottomOf="@+id/tvmagia" />
 
             <TextView
-                android:id="@+id/etdrop"
+                android:id="@+id/etinventario"
                 android:layout_width="141dp"
                 android:layout_height="115dp"
                 android:layout_marginStart="100dp"
                 android:layout_marginTop="10dp"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/etEevasion"
+                app:layout_constraintStart_toEndOf="@+id/etevasion"
                 app:layout_constraintTop_toBottomOf="@+id/tvinventario" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
